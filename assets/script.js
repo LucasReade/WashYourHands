@@ -1,7 +1,7 @@
 const startDiv = document.getElementById('Start');
 const timerDiv = document.getElementById('Timer');
 
-var timer;
+var timerid;
 var currentCountDown;
 
 document.getElementById('startBtn').addEventListener('click', () => {
@@ -11,21 +11,22 @@ document.getElementById('startBtn').addEventListener('click', () => {
 });
 
 document.getElementById('stopBtn').addEventListener('click', () => {
-    clearInterval(timer);
+    clearInterval(timerid);
     startDiv.classList.remove('hidden');
     timerDiv.classList.add('hidden');
 });
 
 function startTimer(){
     currentCountDown = 20;
-    timer = setInterval(timer, 1000);
+    document.getElementById('countDown').textContent = currentCountDown;
+    timerid = setInterval(timer, 1000);
 }
 
 function timer(){
     currentCountDown--;
     document.getElementById('countDown').textContent = currentCountDown;
     if(currentCountDown <= 0){
-        clearInterval(timer);
+        clearInterval(timerid);
     }
 }
 
