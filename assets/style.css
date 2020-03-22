@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.appOuter{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+    .header{
+        text-align: center;
+        font-size: 1.5em;
+        padding: 0.5em 0;
+        background: #04B2D9;
+        color: #8C6A2B;
+    }
+
+    .appPage{
+        flex: 1;
+        background: #04B2D9;
+    }
+    .appPage.hidden{
+        display: none;
+    }
+
+        .infoTxt{
+            width: 250px;
+            font-size: 20px;
+            margin: 90px auto 0 auto;
+            text-align: center;
+            color: #fff;
+        }
+
+        .start{
+            width: 200px;
+            padding: 10px;
+            font-size: 20px;
+            position: absolute;
+            display: block;
+            bottom: 50px;
+            left: calc(50% - 100px);
+            background: #A6831C;
+            border: 0;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        #countDown{
+            font-size: 10em;
+            text-align: center;
+            color: #fff;
+            margin: 100px 0 0 0;
+        }
+
+        .endtimer{
+            width: 200px;
+            padding: 10px;
+            font-size: 20px;
+            position: absolute;
+            display: block;
+            bottom: 50px;
+            background: transparent;
+            text-decoration: underline;
+            outline: none;
+            left: calc(50% - 100px);
+            border: 0;
+            color: #fff;
+        }
